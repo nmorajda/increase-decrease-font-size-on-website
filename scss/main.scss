@@ -8,3 +8,63 @@ html {
     padding: 0;
     box-sizing: inherit;
 }
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container {
+    position: relative;
+    width: 120rem;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .btn {
+        display: inline-flex;
+        margin: 0 .5rem;
+        padding: .5rem 1rem;
+        color: #fff;
+        background-color: #ddd;
+        cursor: pointer;
+
+        &.active {
+            background-color: #444;
+        }
+
+        &:nth-child(2) {
+            font-size: 1.5em;
+        }
+
+        &:nth-child(3) {
+            font-size: 2em;
+        }
+    }
+}
+
+.content {
+    font-size: 1em;
+    color: #444;
+
+    h1, p {
+        transition: 0.5s;
+    }
+
+    p {
+
+    }
+}
